@@ -10,6 +10,11 @@
       "StackName": "amplify-logosbooking-dev-231144",
       "StackId": "arn:aws:cloudformation:eu-central-1:228461617156:stack/amplify-logosbooking-dev-231144/f2fc9ad0-83ab-11ec-93a0-02c3eb604e26",
       "AmplifyAppId": "d2tdmzyc1874xb"
+    },
+    "categories": {
+      "auth": {
+        "logosbookingd73a40e1": {}
+      }
     }
   }
 }
