@@ -9,14 +9,14 @@ export const Alert = ({
   return (
     open && (
       <div
-        class="fixed z-50 w-full md:max-w-sm max-h-screen overflow-hidden bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded"
+        className="fixed z-50 w-full md:max-w-sm max-h-screen overflow-hidden bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded"
         role="alert"
       >
-        <strong class="font-bold">{title}</strong>
-        <span class="block sm:inline">{errorText}</span>
-        <span class="absolute top-0 bottom-0 right-0 px-4 py-3" onClick={onClose}>
+        <strong className="font-bold">{title}</strong>
+        <span className="block sm:inline">{errorText}</span>
+        <span className="absolute top-0 bottom-0 right-0 px-4 py-3" onClick={onClose}>
           <svg
-            class="fill-current h-6 w-6 text-red-500"
+            className="fill-current h-6 w-6 text-red-500"
             role="button"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"

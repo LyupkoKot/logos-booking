@@ -9,10 +9,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
       <AuthContext>
-        <div className="flex">
-          <HeaderLayout />
-          <Component {...pageProps} />{' '}
-        </div>
+        <HeaderLayout>
+          <Component {...pageProps} />
+        </HeaderLayout>
       </AuthContext>
     </div>
   );

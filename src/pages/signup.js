@@ -40,7 +40,6 @@ const Signup = () => {
 
   async function signUpWithEmailAndPassword(data) {
     const { username, password, email } = data;
-    console.log('Data: ', username, password, email);
     try {
       const { user } = await Auth.signUp({
         username: email,
@@ -50,7 +49,6 @@ const Signup = () => {
           name: username,
         },
       });
-      console.log('Signed up a user:  ', user);
     } catch (error) {
       throw error;
     }
@@ -61,21 +59,18 @@ const Signup = () => {
     try {
       await Auth.confirmSignUp(email, code);
       const amplifyUser = await Auth.signIn(email, password);
-      console.log('Successs, singed in a user', amplifyUser);
       if (amplifyUser) {
         router.push(`/`);
       } else {
         throw new Error("Something went wrong :'(");
       }
     } catch (error) {
-      console.log('error confirming sign up', error);
+      console.error('error confirming sign up', error);
     }
   }
 
-  console.log('The value of the user from the hook is: ', user);
 
   return (
-    <div className="content-container">
       <div className="flex flex-col items-center">
         <Alert errorText={signUpError} open={open} onClose={handleClose} />
         <div className="max-w-full sm:w-540 mt-14">
@@ -153,7 +148,6 @@ const Signup = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 

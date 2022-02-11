@@ -2,116 +2,107 @@
 // this is an auto generated file. This will be overwritten
 
 export const onCreateBooking = /* GraphQL */ `
-  subscription OnCreateBooking($owner: String) {
-    onCreateBooking(owner: $owner) {
-      _id
+  subscription OnCreateBooking($customer: String) {
+    onCreateBooking(customer: $customer) {
+      id
       intention {
-        _id
+        id
         title
+        customer
         description
         date
-        id
         createdAt
         updatedAt
-        owner
       }
       status
+      customer
       date
       createdAt
       updatedAt
-      id
       bookingIntentionId
-      owner
     }
   }
 `;
 export const onUpdateBooking = /* GraphQL */ `
-  subscription OnUpdateBooking($owner: String) {
-    onUpdateBooking(owner: $owner) {
-      _id
+  subscription OnUpdateBooking($customer: String) {
+    onUpdateBooking(customer: $customer) {
+      id
       intention {
-        _id
+        id
         title
+        customer
         description
         date
-        id
         createdAt
         updatedAt
-        owner
       }
       status
+      customer
       date
       createdAt
       updatedAt
-      id
       bookingIntentionId
-      owner
     }
   }
 `;
 export const onDeleteBooking = /* GraphQL */ `
-  subscription OnDeleteBooking($owner: String) {
-    onDeleteBooking(owner: $owner) {
-      _id
+  subscription OnDeleteBooking($customer: String) {
+    onDeleteBooking(customer: $customer) {
+      id
       intention {
-        _id
+        id
         title
+        customer
         description
         date
-        id
         createdAt
         updatedAt
-        owner
       }
       status
+      customer
       date
       createdAt
       updatedAt
-      id
       bookingIntentionId
-      owner
     }
   }
 `;
 export const onCreateIntention = /* GraphQL */ `
-  subscription OnCreateIntention($owner: String) {
-    onCreateIntention(owner: $owner) {
-      _id
+  subscription OnCreateIntention($customer: String) {
+    onCreateIntention(customer: $customer) {
+      id
       title
+      customer
       description
       date
-      id
       createdAt
       updatedAt
-      owner
     }
   }
 `;
 export const onUpdateIntention = /* GraphQL */ `
-  subscription OnUpdateIntention($owner: String) {
-    onUpdateIntention(owner: $owner) {
-      _id
+  subscription OnUpdateIntention($customer: String) {
+    onUpdateIntention(customer: $customer) {
+      id
       title
+      customer
       description
       date
-      id
       createdAt
       updatedAt
-      owner
     }
   }
 `;
 export const onDeleteIntention = /* GraphQL */ `
-  subscription OnDeleteIntention($owner: String) {
-    onDeleteIntention(owner: $owner) {
-      _id
+  subscription OnDeleteIntention($customer: String) {
+    onDeleteIntention(customer: $customer) {
+      id
       title
+      customer
       description
       date
-      id
       createdAt
       updatedAt
-      owner
     }
   }
 `;

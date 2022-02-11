@@ -14,6 +14,18 @@
     "categories": {
       "auth": {
         "logosbookingd73a40e1": {}
+      },
+      "function": {
+        "emailservice": {
+          "sesEmail": "liubomyrkovtyk@gmail.com",
+          "deploymentBucketName": "amplify-logosbooking-dev-231144-deployment",
+          "s3Key": "amplify-builds/emailservice-424c45647141746b5062-build.zip"
+        },
+        "createbookingmail": {
+          "sesEmail": "liubomyrkovtyk@gmail.com",
+          "deploymentBucketName": "amplify-logosbooking-dev-231144-deployment",
+          "s3Key": "amplify-builds/createbookingmail-464d5070735469573357-build.zip"
+        }
       }
     }
   }

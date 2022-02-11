@@ -7,24 +7,22 @@ export const createBooking = /* GraphQL */ `
     $condition: ModelBookingConditionInput
   ) {
     createBooking(input: $input, condition: $condition) {
-      _id
+      id
       intention {
-        _id
+        id
         title
+        customer
         description
         date
-        id
         createdAt
         updatedAt
-        owner
       }
       status
+      customer
       date
       createdAt
       updatedAt
-      id
       bookingIntentionId
-      owner
     }
   }
 `;
@@ -34,24 +32,22 @@ export const updateBooking = /* GraphQL */ `
     $condition: ModelBookingConditionInput
   ) {
     updateBooking(input: $input, condition: $condition) {
-      _id
+      id
       intention {
-        _id
+        id
         title
+        customer
         description
         date
-        id
         createdAt
         updatedAt
-        owner
       }
       status
+      customer
       date
       createdAt
       updatedAt
-      id
       bookingIntentionId
-      owner
     }
   }
 `;
@@ -61,24 +57,22 @@ export const deleteBooking = /* GraphQL */ `
     $condition: ModelBookingConditionInput
   ) {
     deleteBooking(input: $input, condition: $condition) {
-      _id
+      id
       intention {
-        _id
+        id
         title
+        customer
         description
         date
-        id
         createdAt
         updatedAt
-        owner
       }
       status
+      customer
       date
       createdAt
       updatedAt
-      id
       bookingIntentionId
-      owner
     }
   }
 `;
@@ -88,14 +82,13 @@ export const createIntention = /* GraphQL */ `
     $condition: ModelIntentionConditionInput
   ) {
     createIntention(input: $input, condition: $condition) {
-      _id
+      id
       title
+      customer
       description
       date
-      id
       createdAt
       updatedAt
-      owner
     }
   }
 `;
@@ -105,14 +98,13 @@ export const updateIntention = /* GraphQL */ `
     $condition: ModelIntentionConditionInput
   ) {
     updateIntention(input: $input, condition: $condition) {
-      _id
+      id
       title
+      customer
       description
       date
-      id
       createdAt
       updatedAt
-      owner
     }
   }
 `;
@@ -122,14 +114,13 @@ export const deleteIntention = /* GraphQL */ `
     $condition: ModelIntentionConditionInput
   ) {
     deleteIntention(input: $input, condition: $condition) {
-      _id
+      id
       title
+      customer
       description
       date
-      id
       createdAt
       updatedAt
-      owner
     }
   }
 `;

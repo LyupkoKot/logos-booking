@@ -3,7 +3,6 @@
 input AMPLIFY {
   globalAuthRule: AuthRule = { allow: public }
 } # FOR TESTING ONLY!
-
 # type Blog @model {
 #   id: ID!
 #   name: String!
@@ -27,18 +26,19 @@ type Booking
   @model
   @auth(
     rules: [
-      { allow: owner, operations: [read, create] }
+      { allow: owner, ownerField: "customer", identityClaim: "sub", operations: [read, create] }
       { allow: private, operations: [read] }
       { allow: public, operations: [read] }
       { allow: groups, groups: ["Admin"] }
     ]
   ) {
-  _id: ID!
+  id: ID!
   intention: Intention! @hasOne
   status: Status!
-  date: String!
-  createdAt: String!
-  updatedAt: String!
+  customer: String
+  date: String
+  createdAt: String
+  updatedAt: String
 }
 
 enum Status {
@@ -51,12 +51,13 @@ type Intention
   @model
   @auth(
     rules: [
-      { allow: owner, operations: [read, create, delete] }
+      { allow: owner, ownerField: "customer", identityClaim: "sub", operations: [read, create, delete] }
       { allow: groups, groups: ["Admin"] }
     ]
   ) {
-  _id: ID!
+  id: ID!
   title: String!
+  customer: String
   description: String!
-  date: String!
+  date: String
 }

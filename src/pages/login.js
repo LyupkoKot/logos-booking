@@ -20,7 +20,7 @@ const Signup = () => {
   const onSubmit = async (data) => {
     try {
       await Auth.signIn(data.email, data.password);
-      router.push(`/`);
+      router.push('/');
     } catch (error) {
       console.error(error);
       setSignInError(error.message);
@@ -33,7 +33,6 @@ const Signup = () => {
   };
 
   return (
-    <div className="content-container">
       <div className="flex flex-col items-center">
         <Alert errorText={signInError} open={open} onClose={handleClose} />
         <div className="max-w-full sm:w-540 mt-14">
@@ -67,9 +66,9 @@ const Signup = () => {
                   {'Sign In'}
                 </button>
                 <p className="text-gray-500  dark:text-gray-400 mt-12 text-sm font-light">
-                  Don't have an account?
+                  Don&apos;t have an account?
                   <span
-                    onClick={() => router.push(`/signup`)}
+                    onClick={() => router.push('/signup')}
                     role="button"
                     className="cursor-pointer text-blue-500 hover:underline"
                   >
@@ -81,7 +80,6 @@ const Signup = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 

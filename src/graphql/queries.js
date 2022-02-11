@@ -4,24 +4,22 @@
 export const getBooking = /* GraphQL */ `
   query GetBooking($id: ID!) {
     getBooking(id: $id) {
-      _id
+      id
       intention {
-        _id
+        id
         title
+        customer
         description
         date
-        id
         createdAt
         updatedAt
-        owner
       }
       status
+      customer
       date
       createdAt
       updatedAt
-      id
       bookingIntentionId
-      owner
     }
   }
 `;
@@ -33,24 +31,22 @@ export const listBookings = /* GraphQL */ `
   ) {
     listBookings(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
-        _id
+        id
         intention {
-          _id
+          id
           title
+          customer
           description
           date
-          id
           createdAt
           updatedAt
-          owner
         }
         status
+        customer
         date
         createdAt
         updatedAt
-        id
         bookingIntentionId
-        owner
       }
       nextToken
     }
@@ -59,14 +55,13 @@ export const listBookings = /* GraphQL */ `
 export const getIntention = /* GraphQL */ `
   query GetIntention($id: ID!) {
     getIntention(id: $id) {
-      _id
+      id
       title
+      customer
       description
       date
-      id
       createdAt
       updatedAt
-      owner
     }
   }
 `;
@@ -78,14 +73,13 @@ export const listIntentions = /* GraphQL */ `
   ) {
     listIntentions(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
-        _id
+        id
         title
+        customer
         description
         date
-        id
         createdAt
         updatedAt
-        owner
       }
       nextToken
     }
