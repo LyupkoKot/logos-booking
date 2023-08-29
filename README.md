@@ -1,34 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# The Parish Scheduler Web Application
 
-## Getting Started
+<img src="https://media.giphy.com/media/o5UzToGsuH6Cq2Y4el/giphy.gif" alt="God Did" width="300">
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- [Description](#description)
+- [Screenshots](#screenshots)
+- [Backend Architecture](#backend-architecture)
+- [Installation](#installation)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Description
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+The Parish Scheduler Web Application is a comprehensive solution designed to facilitate the scheduling of Masses and religious services for parishes. Built with React and Next.js, this application provides an intuitive user interface and leverages AWS services for a robust backend infrastructure.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+The application allows parishioners to explore the Mass schedule, make reservations, and order Mass intentions. With its user-friendly design, multi-language support, dark/light mode toggling, and mobile optimization, the app aims to provide an enhanced user experience. The backend architecture, powered by AWS, ensures data security, scalability, and seamless reservation management.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Screenshots
 
-## Learn More
+Here are some screenshots showcasing different sections of the application:
 
-To learn more about Next.js, take a look at the following resources:
+- Home Page
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  ![Home Page](https://github.com/LyupkoKot/logos-booking/assets/46659532/6462785a-d4d1-48d1-9425-68da42a7b028)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Calendar/Planner Page
 
-## Deploy on Vercel
+  ![Calendar/Planner Page](https://github.com/LyupkoKot/logos-booking/assets/46659532/575eb94d-79fa-4d15-9c0c-8508491ebec8)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Mobile View
+  
+  <img width="176" alt="Mobile View 1" src="https://github.com/LyupkoKot/logos-booking/assets/46659532/212ac85f-9467-48ae-a8af-ce7f9fdf64f0"><img width="178" alt="Mobile View 2" src="https://github.com/LyupkoKot/logos-booking/assets/46659532/294fe61c-a2b6-4e6d-abb7-65b44cf1d5ac">
+
+- Reservation Form Modal
+
+  ![Reservation Form Modal](https://github.com/LyupkoKot/logos-booking/assets/46659532/ebab32ba-2dd3-4157-a72a-e8ea82d55e20)
+  
+- Accepting/Canceling Modal
+
+  ![Accepting/Canceling Modal](https://github.com/LyupkoKot/logos-booking/assets/46659532/19e8fc8f-e7c5-4c66-aeae-1a533b2b4bba)
+
+- Canceling Accepted Reservation Modal
+
+  ![Canceling Accepted Reservation Modal](https://github.com/LyupkoKot/logos-booking/assets/46659532/e460f48a-1a18-492b-b75a-1554de319183)
+
+## Backend Architecture
+
+The application's backend is built on Amazon Web Services (AWS), providing a secure and scalable foundation.
+
+![Backend Architecture](https://github.com/LyupkoKot/logos-booking/assets/46659532/03198f91-1206-41a4-a3eb-7672a0ea245a)
+
+## Installation
+
+1. Clone this repository.
+2. Navigate to the project directory.
+3. Run `npm install` to install the required dependencies.
+4. After installation, build the project by running `npm run build`.
+5. Start the application using `npm start`.
+6. Access the application in your browser at `http://localhost:3000`.
